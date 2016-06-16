@@ -146,6 +146,7 @@ void sample1_convnet(const string& data_dir_path) {
 		cout << endl;
 	}
 	cin >> s;
+
 }
 
 

@@ -58,8 +58,10 @@ namespace tiny_cnn {
  **/
 class nodes {
  public:
-     typedef typename std::vector<layerptr_t>::iterator iterator;
-     typedef typename std::vector<layerptr_t>::const_iterator const_iterator;
+     //typedef typename std::vector<layerptr_t>::iterator iterator;
+     //typedef typename std::vector<layerptr_t>::const_iterator const_iterator;
+	 typedef std::vector<layerptr_t>::iterator iterator;//sindo
+	 typedef std::vector<layerptr_t>::const_iterator const_iterator;//sindo
 
     /**
      * propagate gradient

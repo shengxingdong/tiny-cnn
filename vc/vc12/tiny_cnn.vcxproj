@@ -109,6 +109,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalOptions>/D_VARIADIC_MAX=10 %(AdditionalOptions)</AdditionalOptions>
+      <UndefinePreprocessorDefinitions>CNN_USE_TBB</UndefinePreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

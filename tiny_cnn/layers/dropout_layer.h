@@ -55,10 +55,10 @@ public:
     }
 
     dropout_layer(const dropout_layer& obj) = default;
-    dropout_layer(dropout_layer&& obj) = default;
+    //dropout_layer(dropout_layer&& obj) = default;//sindo
     virtual ~dropout_layer(){}
     dropout_layer& operator=(const dropout_layer& obj) = default;
-    dropout_layer& operator=(dropout_layer&& obj) = default;
+    //dropout_layer& operator=(dropout_layer&& obj) = default;//sindo
 
     void set_dropout_rate(float_t rate)
     {

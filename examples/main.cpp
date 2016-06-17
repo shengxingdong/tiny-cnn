@@ -134,17 +134,10 @@ void sample1_convnet(const string& data_dir_path) {
     // test and show results
 	cout << "testing...\n";
 	clock_t s = clock();
-    nn.test(test_images, test_labels).print_detail(std::cout);
+    //nn.test(test_images, test_labels).print_detail(std::cout);
 	std::vector<vec_t> result = nn.test(test_images);
 	cout << "test image num: " << test_images.size() << endl;
 	cout << "time used per image: " << (clock() - s) / (test_images.size() + 0.0) << endl;
-	for (int i = 0; i < 10; i++){
-		cout << test_labels[i] << " vs " << max_index(result[i]) << " vs " << nn.fprop_max_index(test_images[i]) << endl;
-		for (int k = 0; k < result[i].size(); k++){
-			cout << result[i][k] << ",";
-		}
-		cout << endl;
-	}
 	cin >> s;
 }
 

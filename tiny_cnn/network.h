@@ -573,7 +573,7 @@ protected:
         const vec_t& prediction = fprop(in, idx);
         return *std::max_element(std::begin(prediction), std::end(prediction));
     }
-public:
+
     label_t fprop_max_index(const vec_t& in, int idx = 0) {
         return label_t(max_index(fprop(in, idx)));
     }

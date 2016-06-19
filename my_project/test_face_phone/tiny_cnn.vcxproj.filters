@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\tiny_cnn\activations\activation_function.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\util\aligned_allocator.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\layers\average_pooling_layer.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\config.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\util\conv_kernel.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\layers\convolutional_layer.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\util\deform.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\layers\dropout_layer.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\layers\fully_connected_layer.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\util\image.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\layers\input_layer.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\layers\layer.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\layers\layers.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\lossfunctions\loss_function.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\layers\max_pooling_layer.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\io\mnist_parser.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\network.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\util\nn_error.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\optimizers\optimizer.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\layers\partial_connected_layer.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\util\product.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\tiny_cnn.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\util\util.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tiny_cnn\util\weight_init.h">
+      <Filter>tiny_cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="face_phone_data_parser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="tiny_cnn">
+      <UniqueIdentifier>{60c68ca4-0a7c-4e31-894e-6427353fd18e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main_face_phone.cpp" />
+  </ItemGroup>
+</Project>

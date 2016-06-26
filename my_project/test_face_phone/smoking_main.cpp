@@ -86,7 +86,7 @@ void sample1_convnet(const string& data_dir_path) {
 	//parse_face_phone(data_dir_path + "/face_phoneing_data-L.txt", &train_images, &train_labels, &test_images, &test_labels);
 	parse_dir_data(data_dir_path, &train_images, &train_labels, &test_images, &test_labels);
 
-#if 0
+#if 1
     std::cout << "start learning" << std::endl;
 
     progress_display disp(train_images.size());
@@ -116,10 +116,10 @@ void sample1_convnet(const string& data_dir_path) {
 
     std::cout << "end training." << std::endl;
 	// save networks
-	std::ofstream ofs("LeNet-weights");
+	std::ofstream ofs("LeNet-weights-Smoking");
 	ofs << nn;
 #else
-	std::ifstream ifs("LeNet-weights");
+	std::ifstream ifs("LeNet-weights-Smoking");
 	ifs >> nn;
 #endif
     // test and show results
@@ -129,13 +129,6 @@ void sample1_convnet(const string& data_dir_path) {
 	std::vector<vec_t> result = nn.test(test_images);
 	cout << "test image num: " << test_images.size() << endl;
 	cout << "time used per image: " << (clock() - s) / (test_images.size() + 0.0) << endl;
-	for (int i = 0; i < 10; i++){
-		cout << test_labels[i] << " vs " << max_index(result[i]) << " vs " << nn.fprop_max_index(test_images[i]) << endl;
-		for (int k = 0; k < result[i].size(); k++){
-			cout << result[i][k] << ",";
-		}
-		cout << endl;
-	}
 	cin >> s;
 
 }

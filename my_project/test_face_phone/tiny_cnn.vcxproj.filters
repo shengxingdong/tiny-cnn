@@ -73,7 +73,10 @@
     <ClInclude Include="..\..\tiny_cnn\util\weight_init.h">
       <Filter>tiny_cnn</Filter>
     </ClInclude>
-    <ClInclude Include="face_phone_data_parser.h" />
+    <ClInclude Include="dir_data_parser.h" />
+    <ClInclude Include="cv_utility.h" />
+    <ClInclude Include="file_utility.h" />
+    <ClInclude Include="cv_header.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="tiny_cnn">
@@ -81,6 +84,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_face_phone.cpp" />
+    <ClCompile Include="smoking_main.cpp" />
+    <ClCompile Include="cv_utility.cpp" />
+    <ClCompile Include="file_utility.cpp" />
   </ItemGroup>
 </Project>

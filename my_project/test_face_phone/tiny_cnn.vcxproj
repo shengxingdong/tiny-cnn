@@ -35,10 +35,15 @@
     <ClInclude Include="..\..\tiny_cnn\tiny_cnn.h" />
     <ClInclude Include="..\..\tiny_cnn\config.h" />
     <ClInclude Include="..\..\tiny_cnn\network.h" />
-    <ClInclude Include="face_phone_data_parser.h" />
+    <ClInclude Include="cv_header.h" />
+    <ClInclude Include="cv_utility.h" />
+    <ClInclude Include="dir_data_parser.h" />
+    <ClInclude Include="file_utility.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_face_phone.cpp" />
+    <ClCompile Include="cv_utility.cpp" />
+    <ClCompile Include="file_utility.cpp" />
+    <ClCompile Include="smoking_main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and '$(VisualStudioVersion)' == ''">$(VCTargetsPath11)</VCTargetsPath>
@@ -72,7 +77,14 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\software\OpenCV\OpenCV310\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\software\OpenCV\OpenCV310\install\x86\vc12\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>D:\software\OpenCV\OpenCV310\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\software\OpenCV\OpenCV310\install\x86\vc12\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
